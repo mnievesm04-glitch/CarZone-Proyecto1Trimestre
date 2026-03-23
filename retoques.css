@@ -269,3 +269,17 @@ tr:nth-child(odd){
     width: 120px;
     padding: 8px;
 }
+
+
+
+/*Defensa coche favorito +imagen */
+.coche-favorito {
+    background-color: rgba(255, 215, 0, 0.1) !important; /* Un fondo amarillento suave */
+    border: 3px solid #ffd700 !important; /* Borde color oro */
+}
+
+.coche-favorito td {
+    color: #b8860b;
+    font-weight: bold;
+}
+/*fin de la defensa coche favorito*/

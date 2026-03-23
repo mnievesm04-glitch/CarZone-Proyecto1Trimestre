@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Datos Cliente y Coche</title>
+  <link rel="stylesheet" href="retoques.css">
+</head>
+<body>
+
+  <h1>Formulario de Datos Cliente y Coche</h1>
+
+  <form method="get" >
+    <!-- Información del viajero -->
+    <fieldset>
+      <legend>Información del Viajero</legend>
+
+      <label for="nombre">Nombre completo *</label>
+      <input type="text" id="nombre" name="nombre" required
+             pattern="[A-ZÁÉÍÓÚÑ][a-záéíóúñ]+(\s[A-ZÁÉÍÓÚÑ][a-záéíóúñ]+)+"
+             placeholder="Ejemplo: Juan Pérez López"
+             title="Solo letras. Cada palabra debe comenzar con mayúscula.">
+
+      <label for="correo">Correo electrónico *</label>
+      <input type="email" id="correo" name="correo" required
+             placeholder="usuariogmail.com usuario@hotmail.com usuario@educarex.es"
+             title=>
+
+      <label for="telefono">Número de teléfono</label>
+      <input type="text" id="telefono" name="telefono"
+             pattern="(\+\d{1,3}\s)?\d{9}"
+             placeholder="+34 612345678"
+             title="Opcional. Debe tener 9 dígitos y puede incluir prefijo (+XX).">
+    </fieldset>
+
+    <!-- Destino del viaje -->
+    <fieldset>
+      <legend>Elije la marca y el modelo.</legend>
+
+      <label for="marca">Marca de Coche *</label>
+      <select id="marca" name="marca" required>
+        <option value="">Seleccione una marca</option>
+        <option value="BMW">BMW</option>
+        <option value="Audi">Audi</option>
+        <option value="Volkswagen">Volkswagen</option>
+        <option value="Toyota">Toyota</option>
+        <option value="Alfa Romeo">Alfa Romeo</option>
+        <option value="Volvo">Volvo</option>
+        <option value="Nissan">Nissan</option>
+         <option value="Mercedes">Mercedes</option>
+        <option value="Hyundai">Hyundai</option>
+        <option value="Kia">Kia</option>
+        <option value="Peugeot">Peugeot</option>
+         <option value="Renault">Renault</option>
+        <option value="Mazda">Mazda</option>
+        <option value="Chevrolet">Chevrolet</option>
+        <option value="Ferrari">Ferrari</option>
+         <option value="Lamborghini">Lamborghini</option>
+        <option value="Jaguar">Jaguar</option>
+        <option value="Honda">Honda</option>
+        <option value="Cupra">Cupra</option>
+        <option value="Subaru">Subaru</option>
+      </select>
+
+      <label for="Modelo">Modelo de la Marca</label>
+      <input type="text" id="modelo" name="modelo" placeholder="Ejemplo: Audi a3.">
+    </fieldset>
+
+<fieldset>
+      <legend>Elije la marca y el modelo.</legend>
+
+      <label for="marca">Comprar o Reparar</label>
+      <select id="marca" name="marca" required>
+        <option value="">Seleccione una Opcion</option>
+        <option value="BMW">Comprar</option>
+        <option value="Audi">Reparar</option>
+
+      </select>
+ <fieldset>
+      <legend>Si Quieres Reparar algo introduce la Reparacion.</legend>
+      <label for="comentarios">Escribe tus Reparaciones o solicitudes especiales:</label>
+      <textarea id="comentarios" name="comentarios" rows="4"
+                pattern=".{20,}"
+                placeholder="Debe tener al menos 20 caracteres si escribes algo"
+                title="Si escribes un comentario, debe tener al menos 20 caracteres."></textarea>
+    </fieldset>
+
+<fieldset>
+      <legend>Si quieres comprar, introduce tu presupuesto (€).</legend>
+      <input type="number" id="presupuesto" name="presupuesto"
+             required min="0"
+             placeholder="Ejemplo: 15000">
+
+
+</fieldset>
+    <!-- Comentarios -->
+    <fieldset>
+      <legend>Comentarios Adicionales</legend>
+      <label for="comentarios">Escribe tus comentarios o solicitudes especiales:</label>
+      <textarea id="comentarios" name="comentarios" rows="4"
+                pattern=".{20,}"
+                placeholder="Debe tener al menos 20 caracteres si escribes algo"
+                title="Si escribes un comentario, debe tener al menos 20 caracteres."></textarea>
+    </fieldset>
+
+    <!-- Botones -->
+    <div class="botones-formulario">
+      <button type="submit">Enviar</button>
+      <button type="reset">Reiniciar</button>
+    </div>
+
+  </form>
+
+  <p><a href="PagPrincipal.html"><h2>Vuelta a Página Principal</h2></a></p>
+
+
+</body>
+</html>
